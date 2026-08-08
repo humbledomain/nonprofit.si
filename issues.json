@@ -1,0 +1,563 @@
+{
+  "site": {
+    "name": "NONPROFIT",
+    "domain": "nonprofit.si",
+    "descriptor": "Every cause, one console",
+    "base": "#07090C"
+  },
+  "categories": [
+    { "id": "planet",    "label": "Planet",    "hue": 168 },
+    { "id": "health",    "label": "Health",    "hue": 342 },
+    { "id": "poverty",   "label": "Poverty",   "hue": 38  },
+    { "id": "rights",    "label": "Rights",    "hue": 268 },
+    { "id": "crisis",    "label": "Crisis",    "hue": 8   },
+    { "id": "community", "label": "Community", "hue": 205 }
+  ],
+  "issues": [
+    {
+      "slug": "climate-change",
+      "title": "Climate Change",
+      "cat": "planet",
+      "hue": 186, "hue2": 158,
+      "motif": "rings",
+      "stat": "~1.3°C above pre-industrial — and still climbing",
+      "blurb": "The decade that decides the century.",
+      "emblem": "<circle cx='24' cy='24' r='9'/><path d='M6 34h36'/><path d='M6 40h36'/><path d='M13 13l4 4M35 13l-4 4'/>",
+      "charities": [
+        { "name": "Clean Air Task Force", "url": "https://www.catf.us", "note": "Decarbonization policy and neglected technologies" },
+        { "name": "Project Drawdown", "url": "https://drawdown.org", "note": "Ranks the climate solutions that actually scale" },
+        { "name": "Environmental Defense Fund", "url": "https://www.edf.org", "note": "Methane tracking and emissions law" }
+      ]
+    },
+    {
+      "slug": "ocean-conservation",
+      "title": "Ocean Conservation",
+      "cat": "planet",
+      "hue": 200, "hue2": 216,
+      "motif": "waves",
+      "stat": "Over a third of assessed fish stocks are overfished",
+      "blurb": "Seventy percent of the planet, almost none of it protected.",
+      "emblem": "<path d='M6 18q6-6 12 0t12 0 12 0'/><path d='M6 26q6-6 12 0t12 0 12 0'/><path d='M6 34q6-6 12 0t12 0 12 0'/>",
+      "charities": [
+        { "name": "Oceana", "url": "https://oceana.org", "note": "Wins national policy fights on fisheries" },
+        { "name": "The Ocean Cleanup", "url": "https://theoceancleanup.com", "note": "Intercepting plastic in rivers and gyres" },
+        { "name": "Marine Conservation Institute", "url": "https://marine-conservation.org", "note": "Maps and certifies real marine protection" }
+      ]
+    },
+    {
+      "slug": "forests-and-land",
+      "title": "Forests & Land",
+      "cat": "planet",
+      "hue": 142, "hue2": 100,
+      "motif": "branch",
+      "stat": "Roughly 10 million hectares of forest lost each year",
+      "blurb": "The cheapest carbon capture ever invented is being cut down.",
+      "emblem": "<path d='M24 42V12'/><path d='M24 24l-10-8M24 24l10-8'/><path d='M24 32l-8-6M24 32l8-6'/>",
+      "charities": [
+        { "name": "Rainforest Trust", "url": "https://www.rainforesttrust.org", "note": "Buys and protects acreage outright" },
+        { "name": "The Nature Conservancy", "url": "https://www.nature.org", "note": "Large-scale land and water protection" },
+        { "name": "Amazon Conservation", "url": "https://www.amazonconservation.org", "note": "Indigenous-led forest defense" }
+      ]
+    },
+    {
+      "slug": "wildlife-and-biodiversity",
+      "title": "Wildlife & Biodiversity",
+      "cat": "planet",
+      "hue": 88, "hue2": 132,
+      "motif": "lattice",
+      "stat": "Around a million species face extinction risk",
+      "blurb": "Extinction is the only edit that cannot be undone.",
+      "emblem": "<path d='M24 8l14 8v16l-14 8-14-8V16z'/><circle cx='24' cy='24' r='5'/>",
+      "charities": [
+        { "name": "World Wildlife Fund", "url": "https://www.worldwildlife.org", "note": "Habitat and anti-poaching at global scale" },
+        { "name": "Wildlife Conservation Society", "url": "https://www.wcs.org", "note": "Field science in the last wild places" },
+        { "name": "Panthera", "url": "https://panthera.org", "note": "The world's wild cats, corridor by corridor" }
+      ]
+    },
+    {
+      "slug": "air-and-pollution",
+      "title": "Air & Pollution",
+      "cat": "planet",
+      "hue": 32, "hue2": 12,
+      "motif": "haze",
+      "stat": "Air pollution is linked to millions of deaths a year",
+      "blurb": "The deadliest environmental risk, and the most fixable.",
+      "emblem": "<path d='M8 16h24a5 5 0 100-10'/><path d='M8 24h30a5 5 0 110 10'/><path d='M8 32h18a4 4 0 110 8'/>",
+      "charities": [
+        { "name": "Clean Air Fund", "url": "https://www.cleanairfund.org", "note": "Funds clean-air campaigns in high-burden cities" },
+        { "name": "Pure Earth", "url": "https://www.pureearth.org", "note": "Cleans up lead and toxic hotspots" },
+        { "name": "Health Effects Institute", "url": "https://www.healtheffects.org", "note": "The evidence base regulators rely on" }
+      ]
+    },
+    {
+      "slug": "food-systems",
+      "title": "Food Systems",
+      "cat": "planet",
+      "hue": 62, "hue2": 40,
+      "motif": "grid",
+      "stat": "About a third of all food produced is never eaten",
+      "blurb": "We already grow enough. We lose it.",
+      "emblem": "<path d='M10 38V22M18 38V16M26 38V16M34 38V22'/><path d='M6 38h36'/><path d='M18 16q4-8 8 0'/>",
+      "charities": [
+        { "name": "ReFED", "url": "https://refed.org", "note": "Data-driven food waste reduction" },
+        { "name": "The Good Food Institute", "url": "https://gfi.org", "note": "Alternative protein research and policy" },
+        { "name": "Rodale Institute", "url": "https://rodaleinstitute.org", "note": "Regenerative agriculture science" }
+      ]
+    },
+
+    {
+      "slug": "global-health",
+      "title": "Global Health",
+      "cat": "health",
+      "hue": 348, "hue2": 320,
+      "motif": "pulse",
+      "stat": "Malaria still kills a child roughly every minute",
+      "blurb": "The best dollar-for-dollar life saving on Earth.",
+      "emblem": "<path d='M6 24h8l4-10 6 20 5-14 4 4h9'/>",
+      "charities": [
+        { "name": "Against Malaria Foundation", "url": "https://www.againstmalaria.com", "note": "Insecticide-treated nets; repeatedly top-rated" },
+        { "name": "Malaria Consortium", "url": "https://www.malariaconsortium.org", "note": "Seasonal chemoprevention for children" },
+        { "name": "Partners In Health", "url": "https://www.pih.org", "note": "Builds real health systems, not just programs" }
+      ]
+    },
+    {
+      "slug": "maternal-and-child-health",
+      "title": "Maternal & Child Health",
+      "cat": "health",
+      "hue": 334, "hue2": 356,
+      "motif": "nest",
+      "stat": "Most maternal deaths are preventable with basic care",
+      "blurb": "Birth should not be the most dangerous day of a life.",
+      "emblem": "<circle cx='24' cy='18' r='6'/><path d='M10 40a14 14 0 0128 0'/>",
+      "charities": [
+        { "name": "UNICEF", "url": "https://www.unicef.org", "note": "Vaccines, nutrition, newborn care worldwide" },
+        { "name": "New Incentives", "url": "https://www.newincentives.org", "note": "Cash incentives that raise infant vaccination" },
+        { "name": "Helen Keller Intl", "url": "https://helenkellerintl.org", "note": "Vitamin A supplementation at scale" }
+      ]
+    },
+    {
+      "slug": "mental-health",
+      "title": "Mental Health",
+      "cat": "health",
+      "hue": 262, "hue2": 288,
+      "motif": "spiral",
+      "stat": "Most people with depression worldwide get no treatment",
+      "blurb": "A treatable condition, left untreated at planetary scale.",
+      "emblem": "<path d='M24 42c0-8 12-8 12-18a12 12 0 10-24 0'/><circle cx='24' cy='24' r='3'/>",
+      "charities": [
+        { "name": "StrongMinds", "url": "https://strongminds.org", "note": "Group therapy for depression in Africa" },
+        { "name": "NAMI", "url": "https://www.nami.org", "note": "US support, education, advocacy" },
+        { "name": "Crisis Text Line", "url": "https://www.crisistextline.org", "note": "Free 24/7 crisis counseling by text" }
+      ]
+    },
+    {
+      "slug": "cancer-research",
+      "title": "Cancer Research",
+      "cat": "health",
+      "hue": 310, "hue2": 268,
+      "motif": "burst",
+      "stat": "Nearly 1 in 2 people will face a cancer diagnosis",
+      "blurb": "Every survival curve was bent by someone's funding.",
+      "emblem": "<circle cx='24' cy='24' r='6'/><path d='M24 6v8M24 34v8M6 24h8M34 24h8M11 11l6 6M31 31l6 6M37 11l-6 6M17 31l-6 6'/>",
+      "charities": [
+        { "name": "Cancer Research Institute", "url": "https://www.cancerresearch.org", "note": "Immunotherapy science funding" },
+        { "name": "American Cancer Society", "url": "https://www.cancer.org", "note": "Research plus patient support" },
+        { "name": "St. Jude", "url": "https://www.stjude.org", "note": "Childhood cancer, families never billed" }
+      ]
+    },
+    {
+      "slug": "rare-and-neglected-diseases",
+      "title": "Rare & Neglected Diseases",
+      "cat": "health",
+      "hue": 284, "hue2": 246,
+      "motif": "scatter",
+      "stat": "Over a billion people are affected by neglected tropical diseases",
+      "blurb": "Diseases with no market, and therefore no cure.",
+      "emblem": "<circle cx='14' cy='14' r='3'/><circle cx='34' cy='16' r='3'/><circle cx='24' cy='30' r='3'/><circle cx='12' cy='34' r='3'/><path d='M14 14l10 16M34 16L24 30M24 30l-12 4'/>",
+      "charities": [
+        { "name": "The END Fund", "url": "https://endfund.org", "note": "Mass treatment for NTDs, cents per person" },
+        { "name": "DNDi", "url": "https://dndi.org", "note": "Develops drugs pharma won't" },
+        { "name": "NORD", "url": "https://rarediseases.org", "note": "US rare disease patients and policy" }
+      ]
+    },
+    {
+      "slug": "addiction-and-overdose",
+      "title": "Addiction & Overdose",
+      "cat": "health",
+      "hue": 18, "hue2": 344,
+      "motif": "fracture",
+      "stat": "Overdose remains a leading cause of death for young adults",
+      "blurb": "Naloxone costs less than a meal and reverses death.",
+      "emblem": "<path d='M24 6l-8 16 12 4-10 16'/><circle cx='24' cy='24' r='17'/>",
+      "charities": [
+        { "name": "NEXT Distro", "url": "https://nextdistro.org", "note": "Mails free naloxone across the US" },
+        { "name": "Shatterproof", "url": "https://www.shatterproof.org", "note": "Treatment quality and stigma reform" },
+        { "name": "Vital Strategies", "url": "https://www.vitalstrategies.org", "note": "Overdose prevention at state scale" }
+      ]
+    },
+
+    {
+      "slug": "extreme-poverty",
+      "title": "Extreme Poverty",
+      "cat": "poverty",
+      "hue": 42, "hue2": 20,
+      "motif": "steps",
+      "stat": "Hundreds of millions still live on under $2.15 a day",
+      "blurb": "The poorest people on Earth know what they need.",
+      "emblem": "<path d='M6 40h9V28h9V18h9V8h9'/><path d='M6 40h36'/>",
+      "charities": [
+        { "name": "GiveDirectly", "url": "https://www.givedirectly.org", "note": "Direct cash to people in extreme poverty" },
+        { "name": "BRAC", "url": "https://bracusa.org", "note": "The graduation approach, proven at scale" },
+        { "name": "Evidence Action", "url": "https://www.evidenceaction.org", "note": "Only funds what the evidence supports" }
+      ]
+    },
+    {
+      "slug": "global-hunger",
+      "title": "Global Hunger",
+      "cat": "poverty",
+      "hue": 46, "hue2": 28,
+      "motif": "grain",
+      "stat": "Hundreds of millions face acute food insecurity",
+      "blurb": "Famine is a decision, not a weather event.",
+      "emblem": "<path d='M24 42V14'/><path d='M24 20q-8-2-8-10 8 0 8 10zM24 20q8-2 8-10-8 0-8 10zM24 30q-8-2-8-10 8 0 8 10zM24 30q8-2 8-10-8 0-8 10z'/>",
+      "charities": [
+        { "name": "World Food Programme USA", "url": "https://www.wfpusa.org", "note": "The world's largest emergency food operation" },
+        { "name": "Action Against Hunger", "url": "https://www.actionagainsthunger.org", "note": "Treats severe acute malnutrition" },
+        { "name": "Feeding America", "url": "https://www.feedingamerica.org", "note": "The US food bank network" }
+      ]
+    },
+    {
+      "slug": "clean-water",
+      "title": "Clean Water & Sanitation",
+      "cat": "poverty",
+      "hue": 194, "hue2": 210,
+      "motif": "drop",
+      "stat": "Roughly 2 billion people lack safely managed drinking water",
+      "blurb": "Chlorine is cheap. Dysentery is not.",
+      "emblem": "<path d='M24 8s12 13 12 20a12 12 0 11-24 0c0-7 12-20 12-20z'/><path d='M18 28a6 6 0 006 6'/>",
+      "charities": [
+        { "name": "charity: water", "url": "https://www.charitywater.org", "note": "100% of public donations fund water projects" },
+        { "name": "Evidence Action", "url": "https://www.evidenceaction.org", "note": "Dispensers for Safe Water, chlorination at source" },
+        { "name": "WaterAid", "url": "https://www.wateraid.org", "note": "Water, sanitation and hygiene systems" }
+      ]
+    },
+    {
+      "slug": "homelessness-and-housing",
+      "title": "Homelessness & Housing",
+      "cat": "poverty",
+      "hue": 24, "hue2": 44,
+      "motif": "roof",
+      "stat": "Homelessness in the US has hit record counts",
+      "blurb": "Housing First works. It's a supply problem now.",
+      "emblem": "<path d='M8 24L24 10l16 14'/><path d='M12 24v16h24V24'/><path d='M20 40V30h8v10'/>",
+      "charities": [
+        { "name": "Community Solutions", "url": "https://community.solutions", "note": "Built For Zero: cities ending homelessness" },
+        { "name": "National Alliance to End Homelessness", "url": "https://endhomelessness.org", "note": "Federal policy and data" },
+        { "name": "Habitat for Humanity", "url": "https://www.habitat.org", "note": "Builds and repairs affordable homes" }
+      ]
+    },
+    {
+      "slug": "economic-mobility",
+      "title": "Economic Mobility",
+      "cat": "poverty",
+      "hue": 160, "hue2": 186,
+      "motif": "ladder",
+      "stat": "Over a billion adults remain outside the formal financial system",
+      "blurb": "Capital is the difference between a bad year and a lost decade.",
+      "emblem": "<path d='M16 42V10M32 42V10'/><path d='M16 34h16M16 26h16M16 18h16'/>",
+      "charities": [
+        { "name": "Kiva", "url": "https://www.kiva.org", "note": "Crowdfunded microloans, repaid and relent" },
+        { "name": "Opportunity International", "url": "https://opportunity.org", "note": "Financial services for smallholder farmers" },
+        { "name": "Grameen Foundation", "url": "https://grameenfoundation.org", "note": "Microfinance and digital inclusion" }
+      ]
+    },
+    {
+      "slug": "education-access",
+      "title": "Education Access",
+      "cat": "poverty",
+      "hue": 222, "hue2": 250,
+      "motif": "page",
+      "stat": "Most children in low-income countries can't read a simple story by age 10",
+      "blurb": "Learning poverty compounds faster than any debt.",
+      "emblem": "<path d='M8 12h14a4 4 0 014 4v22a4 4 0 00-4-4H8z'/><path d='M40 12H26a4 4 0 00-4 4v22a4 4 0 014-4h14z'/>",
+      "charities": [
+        { "name": "Pratham", "url": "https://prathamusa.org", "note": "Teaching at the Right Level, rigorously tested" },
+        { "name": "Room to Read", "url": "https://www.roomtoread.org", "note": "Literacy and girls' education" },
+        { "name": "TaRL Africa", "url": "https://teachingattherightlevel.org", "note": "Scales the highest-evidence teaching method" }
+      ]
+    },
+
+    {
+      "slug": "gender-equality",
+      "title": "Gender Equality",
+      "cat": "rights",
+      "hue": 322, "hue2": 292,
+      "motif": "balance",
+      "stat": "Full legal parity is centuries away at current pace",
+      "blurb": "Half the world's talent, still constrained by law.",
+      "emblem": "<circle cx='24' cy='16' r='8'/><path d='M24 24v18M16 34h16'/>",
+      "charities": [
+        { "name": "Global Fund for Women", "url": "https://www.globalfundforwomen.org", "note": "Funds frontline women-led movements" },
+        { "name": "Malala Fund", "url": "https://malala.org", "note": "Twelve years of free, safe education for girls" },
+        { "name": "Equality Now", "url": "https://equalitynow.org", "note": "Strikes discriminatory laws off the books" }
+      ]
+    },
+    {
+      "slug": "racial-justice",
+      "title": "Racial Justice",
+      "cat": "rights",
+      "hue": 272, "hue2": 244,
+      "motif": "weave",
+      "stat": "Wealth and sentencing gaps remain generational",
+      "blurb": "The law is only as fair as its enforcement.",
+      "emblem": "<path d='M8 16h32M8 24h32M8 32h32'/><path d='M18 8v32M30 8v32'/>",
+      "charities": [
+        { "name": "Equal Justice Initiative", "url": "https://eji.org", "note": "Wrongful conviction and sentencing reform" },
+        { "name": "NAACP Legal Defense Fund", "url": "https://www.naacpldf.org", "note": "Civil rights litigation since 1940" },
+        { "name": "Color Of Change", "url": "https://colorofchange.org", "note": "Corporate and criminal justice campaigns" }
+      ]
+    },
+    {
+      "slug": "lgbtq-rights",
+      "title": "LGBTQ+ Rights",
+      "cat": "rights",
+      "hue": 300, "hue2": 340,
+      "motif": "prism",
+      "stat": "Same-sex relations remain criminalized in ~60 countries",
+      "blurb": "Safety is not a lifestyle preference.",
+      "emblem": "<path d='M6 36q18-30 36 0'/><path d='M12 36q12-20 24 0'/><path d='M18 36q6-10 12 0'/>",
+      "charities": [
+        { "name": "The Trevor Project", "url": "https://www.thetrevorproject.org", "note": "Crisis intervention for LGBTQ+ youth" },
+        { "name": "Lambda Legal", "url": "https://lambdalegal.org", "note": "Impact litigation for civil rights" },
+        { "name": "Outright International", "url": "https://outrightinternational.org", "note": "LGBTIQ human rights globally" }
+      ]
+    },
+    {
+      "slug": "disability-inclusion",
+      "title": "Disability Inclusion",
+      "cat": "rights",
+      "hue": 208, "hue2": 232,
+      "motif": "orbit",
+      "stat": "About 1 in 6 people live with a significant disability",
+      "blurb": "Most barriers are designed, which means they're removable.",
+      "emblem": "<circle cx='24' cy='24' r='16'/><circle cx='24' cy='24' r='6'/><path d='M24 8v10M24 30v10M8 24h10M30 24h10'/>",
+      "charities": [
+        { "name": "CBM Global", "url": "https://cbm-global.org", "note": "Disability inclusion and avoidable blindness" },
+        { "name": "AAPD", "url": "https://www.aapd.com", "note": "US disability rights and economic power" },
+        { "name": "Special Olympics", "url": "https://www.specialolympics.org", "note": "Inclusion through sport and health screening" }
+      ]
+    },
+    {
+      "slug": "press-freedom",
+      "title": "Press Freedom",
+      "cat": "rights",
+      "hue": 356, "hue2": 24,
+      "motif": "beam",
+      "stat": "Hundreds of journalists are imprisoned worldwide",
+      "blurb": "Every other cause depends on someone being able to report it.",
+      "emblem": "<path d='M10 38V14l22-6v34z'/><path d='M32 20h6v18h-6'/><path d='M16 22h10M16 28h10'/>",
+      "charities": [
+        { "name": "Committee to Protect Journalists", "url": "https://cpj.org", "note": "Emergency support for reporters at risk" },
+        { "name": "Reporters Without Borders", "url": "https://rsf.org", "note": "Press freedom monitoring and defense" },
+        { "name": "Freedom of the Press Foundation", "url": "https://freedom.press", "note": "Source protection and legal defense" }
+      ]
+    },
+    {
+      "slug": "democracy-and-voting",
+      "title": "Democracy & Voting",
+      "cat": "rights",
+      "hue": 236, "hue2": 206,
+      "motif": "radial",
+      "stat": "Democratic backsliding has outpaced gains for years running",
+      "blurb": "Institutions erode quietly, then all at once.",
+      "emblem": "<path d='M24 6v36'/><path d='M24 24l14-8M24 24l-14-8M24 24l14 8M24 24l-14 8'/><circle cx='24' cy='24' r='4'/>",
+      "charities": [
+        { "name": "Brennan Center for Justice", "url": "https://www.brennancenter.org", "note": "Voting rights research and litigation" },
+        { "name": "Campaign Legal Center", "url": "https://campaignlegal.org", "note": "Nonpartisan election law enforcement" },
+        { "name": "League of Women Voters", "url": "https://www.lwv.org", "note": "Registration and voter protection" }
+      ]
+    },
+
+    {
+      "slug": "refugees-and-displacement",
+      "title": "Refugees & Displacement",
+      "cat": "crisis",
+      "hue": 202, "hue2": 178,
+      "motif": "drift",
+      "stat": "Over 120 million people are forcibly displaced",
+      "blurb": "The largest displacement in recorded history.",
+      "emblem": "<path d='M6 34h36'/><path d='M14 34V20l10-8 10 8v14'/><path d='M20 34v-8h8v8'/>",
+      "charities": [
+        { "name": "International Rescue Committee", "url": "https://www.rescue.org", "note": "Emergency response and resettlement" },
+        { "name": "USA for UNHCR", "url": "https://www.unrefugees.org", "note": "The UN Refugee Agency's frontline work" },
+        { "name": "HIAS", "url": "https://hias.org", "note": "Legal protection for refugees worldwide" }
+      ]
+    },
+    {
+      "slug": "disaster-relief",
+      "title": "Disaster Relief",
+      "cat": "crisis",
+      "hue": 14, "hue2": 38,
+      "motif": "shock",
+      "stat": "Disaster displacement now runs to tens of millions a year",
+      "blurb": "The first 72 hours decide the next ten years.",
+      "emblem": "<circle cx='24' cy='24' r='4'/><circle cx='24' cy='24' r='11'/><circle cx='24' cy='24' r='18'/>",
+      "charities": [
+        { "name": "Direct Relief", "url": "https://www.directrelief.org", "note": "Medical supply chains into disaster zones" },
+        { "name": "GlobalGiving", "url": "https://www.globalgiving.org", "note": "Routes funds to vetted local responders" },
+        { "name": "Team Rubicon", "url": "https://teamrubiconusa.org", "note": "Veteran-led rapid deployment" }
+      ]
+    },
+    {
+      "slug": "armed-conflict",
+      "title": "Armed Conflict & Civilians",
+      "cat": "crisis",
+      "hue": 352, "hue2": 330,
+      "motif": "shard",
+      "stat": "More active state conflicts than at any point since 1945",
+      "blurb": "Civilians are not collateral. They are the majority of casualties.",
+      "emblem": "<path d='M24 6l16 10v14L24 42 8 30V16z'/><path d='M24 16v10M24 32h.01'/>",
+      "charities": [
+        { "name": "Doctors Without Borders", "url": "https://www.doctorswithoutborders.org", "note": "Independent medical care in war zones" },
+        { "name": "ICRC", "url": "https://www.icrc.org", "note": "Guardian of the Geneva Conventions" },
+        { "name": "CIVIC", "url": "https://civiliansinconflict.org", "note": "Pushes armed actors to protect civilians" }
+      ]
+    },
+    {
+      "slug": "human-trafficking",
+      "title": "Human Trafficking",
+      "cat": "crisis",
+      "hue": 288, "hue2": 264,
+      "motif": "chain",
+      "stat": "An estimated 50 million people live in modern slavery",
+      "blurb": "It is not history. It is a supply chain.",
+      "emblem": "<rect x='8' y='18' width='16' height='12' rx='6'/><rect x='24' y='18' width='16' height='12' rx='6'/>",
+      "charities": [
+        { "name": "Polaris Project", "url": "https://polarisproject.org", "note": "Runs the US National Human Trafficking Hotline" },
+        { "name": "International Justice Mission", "url": "https://www.ijm.org", "note": "Rescue plus local justice system reform" },
+        { "name": "The Freedom Fund", "url": "https://www.freedomfund.org", "note": "Funds grassroots anti-slavery hotspots" }
+      ]
+    },
+    {
+      "slug": "gender-based-violence",
+      "title": "Gender-Based Violence",
+      "cat": "crisis",
+      "hue": 332, "hue2": 306,
+      "motif": "shield",
+      "stat": "About 1 in 3 women experience physical or sexual violence",
+      "blurb": "The most common violent crime, and the least prosecuted.",
+      "emblem": "<path d='M24 6l14 6v14c0 9-6 14-14 16-8-2-14-7-14-16V12z'/><path d='M24 20v8'/>",
+      "charities": [
+        { "name": "National Domestic Violence Hotline", "url": "https://www.thehotline.org", "note": "24/7 confidential support in the US" },
+        { "name": "RAINN", "url": "https://www.rainn.org", "note": "Largest US anti-sexual-violence organization" },
+        { "name": "Futures Without Violence", "url": "https://www.futureswithoutviolence.org", "note": "Prevention policy and training" }
+      ]
+    },
+    {
+      "slug": "child-welfare",
+      "title": "Child Welfare",
+      "cat": "crisis",
+      "hue": 182, "hue2": 158,
+      "motif": "cradle",
+      "stat": "Hundreds of thousands of US children are in foster care",
+      "blurb": "No child should age out of a system into nothing.",
+      "emblem": "<circle cx='24' cy='16' r='6'/><path d='M8 40q16-14 32 0'/>",
+      "charities": [
+        { "name": "Save the Children", "url": "https://www.savethechildren.org", "note": "Child protection in emergencies and at home" },
+        { "name": "National CASA/GAL", "url": "https://nationalcasagal.org", "note": "Trained advocates for kids in foster care" },
+        { "name": "Children's Defense Fund", "url": "https://www.childrensdefense.org", "note": "Policy for children in poverty" }
+      ]
+    },
+
+    {
+      "slug": "veterans",
+      "title": "Veterans",
+      "cat": "community",
+      "hue": 214, "hue2": 190,
+      "motif": "chevron",
+      "stat": "Veteran suicide remains far above the civilian rate",
+      "blurb": "The service ends. The obligation doesn't.",
+      "emblem": "<path d='M10 20l14-10 14 10'/><path d='M10 30l14-10 14 10'/><path d='M10 40l14-10 14 10'/>",
+      "charities": [
+        { "name": "Wounded Warrior Project", "url": "https://www.woundedwarriorproject.org", "note": "Mental health and rehabilitation programs" },
+        { "name": "Fisher House Foundation", "url": "https://fisherhouse.org", "note": "Free lodging for military families in treatment" },
+        { "name": "Team RWB", "url": "https://teamrwb.org", "note": "Connection and community after service" }
+      ]
+    },
+    {
+      "slug": "elder-care-and-aging",
+      "title": "Elder Care & Aging",
+      "cat": "community",
+      "hue": 176, "hue2": 200,
+      "motif": "concentric",
+      "stat": "Social isolation carries mortality risk comparable to smoking",
+      "blurb": "Loneliness is a clinical condition with a simple treatment.",
+      "emblem": "<circle cx='24' cy='24' r='16'/><path d='M24 14v10l7 5'/>",
+      "charities": [
+        { "name": "Meals on Wheels America", "url": "https://www.mealsonwheelsamerica.org", "note": "A meal and a check-in, daily" },
+        { "name": "Alzheimer's Association", "url": "https://www.alz.org", "note": "Care, support and research" },
+        { "name": "AARP Foundation", "url": "https://www.aarp.org/aarp-foundation", "note": "Fights senior poverty and isolation" }
+      ]
+    },
+    {
+      "slug": "criminal-justice-reform",
+      "title": "Criminal Justice Reform",
+      "cat": "community",
+      "hue": 250, "hue2": 224,
+      "motif": "bars",
+      "stat": "Hundreds of thousands are jailed pretrial, unconvicted",
+      "blurb": "Poverty should not be a jailable offense.",
+      "emblem": "<path d='M12 8v32M20 8v32M28 8v32M36 8v32'/><path d='M8 24h32'/>",
+      "charities": [
+        { "name": "The Bail Project", "url": "https://bailproject.org", "note": "Revolving bail fund; money returns and recycles" },
+        { "name": "Vera Institute of Justice", "url": "https://www.vera.org", "note": "Research-driven decarceration" },
+        { "name": "Innocence Project", "url": "https://innocenceproject.org", "note": "Exonerations through DNA evidence" }
+      ]
+    },
+    {
+      "slug": "animal-welfare",
+      "title": "Animal Welfare",
+      "cat": "community",
+      "hue": 104, "hue2": 76,
+      "motif": "paw",
+      "stat": "Tens of billions of land animals are farmed each year",
+      "blurb": "The largest scale of suffering humans directly control.",
+      "emblem": "<circle cx='16' cy='16' r='4'/><circle cx='30' cy='14' r='4'/><circle cx='38' cy='26' r='4'/><path d='M12 34q10-12 20 0a10 8 0 01-20 0z'/>",
+      "charities": [
+        { "name": "The Humane League", "url": "https://thehumaneleague.org", "note": "Corporate campaigns that change millions of lives" },
+        { "name": "Mercy For Animals", "url": "https://mercyforanimals.org", "note": "Investigations and legal reform" },
+        { "name": "ASPCA", "url": "https://www.aspca.org", "note": "Rescue, shelters, and cruelty response" }
+      ]
+    },
+    {
+      "slug": "digital-rights",
+      "title": "Digital Rights & Privacy",
+      "cat": "community",
+      "hue": 242, "hue2": 268,
+      "motif": "mesh",
+      "stat": "Internet shutdowns hit record highs year after year",
+      "blurb": "The public square is privately owned and increasingly switchable.",
+      "emblem": "<circle cx='24' cy='24' r='16'/><path d='M8 24h32'/><path d='M24 8c8 8 8 24 0 32-8-8-8-24 0-32z'/>",
+      "charities": [
+        { "name": "Electronic Frontier Foundation", "url": "https://www.eff.org", "note": "Litigation and tools for digital liberty" },
+        { "name": "Access Now", "url": "https://www.accessnow.org", "note": "Digital security helpline; #KeepItOn" },
+        { "name": "Mozilla Foundation", "url": "https://foundation.mozilla.org", "note": "An open, accountable internet" }
+      ]
+    },
+    {
+      "slug": "arts-and-heritage",
+      "title": "Arts & Heritage",
+      "cat": "community",
+      "hue": 44, "hue2": 14,
+      "motif": "arch",
+      "stat": "Conflict and climate are erasing irreplaceable heritage sites",
+      "blurb": "Memory is infrastructure.",
+      "emblem": "<path d='M10 42V22a14 14 0 0128 0v20'/><path d='M18 42V24a6 6 0 0112 0v18'/>",
+      "charities": [
+        { "name": "World Monuments Fund", "url": "https://www.wmf.org", "note": "Saves heritage sites at risk" },
+        { "name": "Internet Archive", "url": "https://archive.org", "note": "The public record, kept public" },
+        { "name": "Americans for the Arts", "url": "https://www.americansforthearts.org", "note": "Arts access and funding advocacy" }
+      ]
+    }
+  ]
+}

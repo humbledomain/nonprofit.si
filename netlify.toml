@@ -1,0 +1,19 @@
+[build]
+  publish = "."
+  command = ""
+
+[functions]
+  directory = "api"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/chat"
+  to = "/.netlify/functions/chat"
+  status = 200
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Set ANTHROPIC_API_KEY under Site settings -> Environment variables.

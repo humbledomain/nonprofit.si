@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Large share card. All critical content inside the central 1040x470 safe area. -->
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C1A20"/>
+      <stop offset="1" stop-color="#07090C"/>
+    </linearGradient>
+    <radialGradient id="b1" cx="0.22" cy="0.14" r="0.8">
+      <stop offset="0" stop-color="#12B39A" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#12B39A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b2" cx="0.88" cy="0.92" r="0.8">
+      <stop offset="0" stop-color="#2E6BE0" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#2E6BE0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scrim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04060A" stop-opacity="0"/>
+      <stop offset="1" stop-color="#04060A" stop-opacity="0.72"/>
+    </linearGradient>
+    <clipPath id="crop"><rect width="1200" height="630"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#base)"/>
+  <rect width="1200" height="630" fill="url(#b1)"/>
+  <rect width="1200" height="630" fill="url(#b2)"/>
+
+  <!-- concentric ring motif, centered on the mark -->
+  <g clip-path="url(#crop)" fill="none" stroke="#64E3C8" stroke-opacity="0.13" stroke-width="2">
+    <circle cx="248" cy="315" r="70"/><circle cx="248" cy="315" r="130"/>
+    <circle cx="248" cy="315" r="190"/><circle cx="248" cy="315" r="250"/>
+    <circle cx="248" cy="315" r="310"/><circle cx="248" cy="315" r="370"/>
+    <circle cx="248" cy="315" r="430"/><circle cx="248" cy="315" r="490"/>
+  </g>
+  <g clip-path="url(#crop)" stroke="#64E3C8" stroke-opacity="0.09" stroke-width="2">
+    <path d="M248 -200V830"/>
+    <path d="M-198 58L694 572"/>
+    <path d="M-198 572L694 58"/>
+  </g>
+
+  <rect width="1200" height="630" fill="url(#scrim)"/>
+
+  <!-- mark -->
+  <g fill="none" stroke="#64E3C8" stroke-linecap="round" transform="translate(248 315)">
+    <g stroke-width="4" opacity="0.4">
+      <path d="M0 -104V104"/><path d="M-90 -52L90 52"/><path d="M-90 52L90 -52"/>
+    </g>
+    <circle r="98" stroke-width="12"/>
+    <circle r="39" stroke-width="12"/>
+  </g>
+
+  <!-- type block, inside the safe area -->
+  <g font-family="Inter, 'SF Pro Display', Helvetica, Arial, sans-serif">
+    <text x="452" y="222" fill="#64E3C8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="21" letter-spacing="7" font-weight="600">36 CAUSES · ONE CONSOLE</text>
+    <text x="452" y="316" fill="#FFFFFF" font-size="76" font-weight="700" letter-spacing="-2">NONPROFIT<tspan fill="#5E6B7C">.SI</tspan></text>
+    <text x="452" y="374" fill="#E9EEF4" font-size="31" font-weight="450">Every cause, one console.</text>
+    <text x="452" y="424" fill="#9BA8B8" font-size="25" font-weight="400">Open a tile. Get the brief. Give, or share it.</text>
+    <rect x="452" y="462" width="86" height="4" rx="2" fill="#FFB65C"/>
+    <text x="452" y="514" fill="#FFB65C" font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="19" letter-spacing="3" font-weight="500">CLIMATE · HUNGER · REFUGEES · JUSTICE · HEALTH</text>
+  </g>
+
+  <rect x="30" y="30" width="1140" height="570" fill="none" stroke="#E9EEF4" stroke-opacity="0.14" stroke-width="2"/>
+</svg>

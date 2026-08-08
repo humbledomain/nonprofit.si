@@ -1,0 +1,16 @@
+{
+  "name": "NONPROFIT.SI",
+  "short_name": "NONPROFIT",
+  "description": "Thirty-six causes on one screen. Open any tile for a brief on why it matters, what has to happen, and where your money goes furthest.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#07090C",
+  "theme_color": "#07090C",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-1024.png", "sizes": "1024x1024", "type": "image/png", "purpose": "maskable" }
+  ]
+}

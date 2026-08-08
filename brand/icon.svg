@@ -1,26 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- static logo reduction: two concentric shells + n=6 spokes. Opaque, legible at 16px. -->
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0C1620"/>
-      <stop offset="1" stop-color="#07090C"/>
-    </linearGradient>
-    <radialGradient id="bloom" cx="0.32" cy="0.24" r="0.85">
-      <stop offset="0" stop-color="#12A98D" stop-opacity="0.45"/>
-      <stop offset="1" stop-color="#12A98D" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <rect width="512" height="512" fill="url(#bg)"/>
-  <rect width="512" height="512" fill="url(#bloom)"/>
-
-  <g fill="none" stroke="#64E3C8" stroke-linecap="round">
-    <g stroke-width="9" opacity="0.32">
-      <path d="M256 96V416"/>
-      <path d="M117.5 176L394.5 336"/>
-      <path d="M117.5 336L394.5 176"/>
-    </g>
-    <circle cx="256" cy="256" r="150" stroke-width="24"/>
-    <circle cx="256" cy="256" r="60" stroke-width="24"/>
-  </g>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0D1620"/><stop offset="1" stop-color="#07090C"/>
+  </linearGradient>
+  <radialGradient id="bloom" cx="0.5" cy="0.5" r="0.62">
+    <stop offset="0" stop-color="#64E3C8" stop-opacity="0.20"/>
+    <stop offset="1" stop-color="#64E3C8" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="512" height="512" fill="url(#bg)"/>
+<rect width="512" height="512" fill="url(#bloom)"/>
+<g fill="none" stroke="#64E3C8" stroke-opacity="0.16" stroke-width="4.1"><path d="M256.0 153.6L256.0 23.0"/><path d="M344.7 204.8L457.7 139.5"/><path d="M344.7 307.2L457.7 372.5"/><path d="M256.0 358.4L256.0 489.0"/><path d="M167.3 307.2L54.3 372.5"/><path d="M167.3 204.8L54.3 139.5"/></g>
+<g fill="none"><path d="M267.86 86.43A169.98 169.98 0 0 1 396.92 160.95" stroke="#43EFCC" stroke-width="48.13" stroke-linecap="round"/><path d="M408.78 181.48A169.98 169.98 0 0 1 408.78 330.52" stroke="#EF4377" stroke-width="48.13" stroke-linecap="round"/><path d="M396.92 351.05A169.98 169.98 0 0 1 267.86 425.57" stroke="#EFB043" stroke-width="48.13" stroke-linecap="round"/><path d="M244.14 425.57A169.98 169.98 0 0 1 115.08 351.05" stroke="#9343EF" stroke-width="48.13" stroke-linecap="round"/><path d="M103.22 330.52A169.98 169.98 0 0 1 103.22 181.48" stroke="#EF5A43" stroke-width="48.13" stroke-linecap="round"/><path d="M115.08 160.95A169.98 169.98 0 0 1 244.14 86.43" stroke="#43A7EF" stroke-width="48.13" stroke-linecap="round"/></g>
+<circle cx="256.0" cy="256.0" r="75.8" fill="none" stroke="#64E3C8" stroke-width="35.8"/>
+<circle cx="256.0" cy="256.0" r="15.4" fill="#64E3C8"/>
 </svg>

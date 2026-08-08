@@ -46,7 +46,11 @@ This is the step that makes the briefs work for visitors instead of asking each 
 
 Two separate mechanisms, both wired:
 
-**Link previews.** `build.py` writes `i/<slug>/index.html` for all 36 issues. Each is a real page with its own OG and Twitter tags pointing at `assets/og-<slug>.png` (1200×630) plus a 1200×1200 square fallback for clients that crop to 1:1. Crawlers read the meta; humans get bounced straight to `/#<slug>` with that brief open. This is what makes a pasted link render large in iMessage, WhatsApp, Slack, Telegram, Discord and X.
+**Link previews.** `build.py` writes `i/<slug>/index.html` for all 36 issues. Each is a real page with its own OG and Twitter tags pointing at `assets/og-<slug>.jpg`. Crawlers read the meta; humans get bounced straight to `/#<slug>` with that brief open. This is what makes a pasted link render large in iMessage, WhatsApp, Slack, Telegram, Discord and X.
+
+Every card is **2400×1260** — 1.905:1, inside the window all those clients use for their big hero preview, at 2× the 1200×630 floor so it stays sharp on a retina phone instead of upscaling. They ship as JPEG rather than PNG: a full-bleed gradient at that size runs 1–2 MB as PNG, and WhatsApp and Telegram quietly drop previews over roughly 600 KB. As JPEG they land near 200 KB, so the card is both bigger and lighter. `build.py` steps quality down automatically if one runs heavy and prints the worst offender.
+
+The site-level card is the actual wall of 36 causes, so the preview is a literal picture of the product. `assets/og-square.jpg` (1600×1600) covers clients that crop to 1:1.
 
 **Generated cards.** Inside a brief, *Make a share card* renders a PNG in the browser from the AI's own closing sentence — story 9:16, square 1:1, or link 1.91:1. On mobile, **Share** opens the native share sheet with the image attached, so it goes straight into Instagram Stories, iMessage, or anywhere else. On desktop it downloads.
 
@@ -73,7 +77,13 @@ That injects the data into `index.html`, regenerates every icon and share card, 
 | Which charities appear | `charities[]` on that issue |
 | The voice of the briefs | `systemFor()` in `index.html` |
 | The model | `MODEL` in `api/chat.js` **and** in `index.html` |
-| The brand mark | `brand/icon.svg` and `brand/share.svg`, then `build.py` |
+| The brand mark | `brand_icon_svg()` in `build.py` |
+| The site share card | `brand_share_svg()` in `build.py` |
+| Card dimensions / weight cap | `OG_W`, `OG_H`, `JPEG_BUDGET_KB` in `build.py` |
+
+`brand/icon.svg` and `brand/share.svg` are **generated** — `build.py` overwrites them on every run. Edit the functions, not the files.
+
+The mark is a ring of six arcs, one per category, in the same six hues as the tiles. It survives at 16×16 as a distinct multicolour ring, and the identical construction is drawn into the favicon, the app icon, the OG cards, and the share cards the browser renders — one shape everywhere.
 
 ---
 

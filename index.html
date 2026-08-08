@@ -8,31 +8,38 @@
 <meta name="description" content="Thirty-six causes on one screen. Open any tile for a Claude-written brief on why it matters, what has to happen, and where your money goes furthest — then share a card that says it for you.">
 <link rel="canonical" href="https://nonprofit.si/">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2307090C'/%3E%3Cg fill='none' stroke='%2364E3C8' stroke-width='4'%3E%3Ccircle cx='32' cy='32' r='8'/%3E%3Ccircle cx='32' cy='32' r='20'/%3E%3C/g%3E%3C/svg%3E">
+<!-- inline mark: the six-arc ring, one arc per category. Zero requests. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2307090C'/%3E%3Cg fill='none' stroke-width='6' stroke-linecap='round'%3E%3Cpath d='M33.74 12.08A20 20 0 0 1 48.38 20.53' stroke='%2343EFCC'/%3E%3Cpath d='M50.13 23.55A20 20 0 0 1 50.13 40.45' stroke='%23EF4377'/%3E%3Cpath d='M48.38 43.47A20 20 0 0 1 33.74 51.92' stroke='%23EFB043'/%3E%3Cpath d='M30.26 51.92A20 20 0 0 1 15.62 43.47' stroke='%239343EF'/%3E%3Cpath d='M13.87 40.45A20 20 0 0 1 13.87 23.55' stroke='%23EF5A43'/%3E%3Cpath d='M15.62 20.53A20 20 0 0 1 30.26 12.08' stroke='%2343A7EF'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='9' fill='none' stroke='%2364E3C8' stroke-width='4.5'/%3E%3Ccircle cx='32' cy='32' r='2' fill='%2364E3C8'/%3E%3C/svg%3E">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/icon-512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#07090C">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NONPROFIT.SI">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+<!-- Large share card. 2400x1260 is 1.905:1 — inside the window iMessage,
+     WhatsApp, Slack, Telegram and X all use for their big hero preview —
+     at 2x the 1200x630 floor, so it stays crisp on a retina phone. -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NONPROFIT.SI">
 <meta property="og:title" content="NONPROFIT.SI — Every cause, one console">
 <meta property="og:description" content="Thirty-six causes on one screen. Open any tile for a brief on why it matters and where your money goes furthest.">
 <meta property="og:url" content="https://nonprofit.si/">
-<meta property="og:image" content="https://nonprofit.si/assets/og.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="NONPROFIT.SI — Every cause, one console">
+<meta property="og:image" content="https://nonprofit.si/assets/og.jpg">
+<meta property="og:image:secure_url" content="https://nonprofit.si/assets/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
+<meta property="og:image:alt" content="NONPROFIT.SI — the wall of thirty-six causes">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="NONPROFIT.SI — Every cause, one console">
 <meta name="twitter:description" content="Thirty-six causes on one screen. Open any tile for a brief on why it matters and where your money goes furthest.">
-<meta name="twitter:image" content="https://nonprofit.si/assets/og.png">
-<meta name="twitter:image:alt" content="NONPROFIT.SI — Every cause, one console">
+<meta name="twitter:image" content="https://nonprofit.si/assets/og.jpg">
+<meta name="twitter:image:alt" content="NONPROFIT.SI — the wall of thirty-six causes">
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"NONPROFIT.SI",
@@ -421,11 +428,20 @@ body.booted .tile{animation:arrive .5s var(--ease) both;animation-delay:calc(var
   <header>
     <a class="lockup" href="#" id="home" aria-label="NONPROFIT.SI — home">
       <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
-        <g id="lg-sp" stroke-width="1.5" opacity=".5">
+        <g id="lg-sp" stroke-width="1.5" opacity=".45">
           <path d="M32 4v56M8 18l48 28M8 46l48-28"/>
         </g>
-        <circle id="lg-r2" cx="32" cy="32" r="20"/>
-        <circle id="lg-r1" cx="32" cy="32" r="8"/>
+        <!-- outer ring: one arc per cause category, same six hues as the tiles -->
+        <g id="lg-r2" stroke-width="5.5" stroke-linecap="round">
+          <path d="M33.74 12.08A20 20 0 0 1 48.38 20.53" stroke="#43EFCC"/>
+          <path d="M50.13 23.55A20 20 0 0 1 50.13 40.45" stroke="#EF4377"/>
+          <path d="M48.38 43.47A20 20 0 0 1 33.74 51.92" stroke="#EFB043"/>
+          <path d="M30.26 51.92A20 20 0 0 1 15.62 43.47" stroke="#9343EF"/>
+          <path d="M13.87 40.45A20 20 0 0 1 13.87 23.55" stroke="#EF5A43"/>
+          <path d="M15.62 20.53A20 20 0 0 1 30.26 12.08" stroke="#43A7EF"/>
+        </g>
+        <circle id="lg-r1" cx="32" cy="32" r="9" stroke-width="4.5"/>
+        <circle cx="32" cy="32" r="2" fill="currentColor" stroke="none"/>
       </svg>
       <span class="wordmark"><b>NONPROFIT</b><span>.SI</span></span>
       <span class="badge">SI</span>
@@ -986,6 +1002,24 @@ function svgImage(svgStr) {
   });
 }
 
+/* The brand mark, drawn to canvas: a ring of six arcs, one per category,
+   around an accent core. Identical construction to brand/icon.svg. */
+function drawMark(g, cx, cy, R) {
+  const sw = Math.max(2.4, R * .30);
+  g.lineWidth = sw; g.lineCap = 'round';
+  CATS.forEach((c, i) => {
+    const a0 = (-90 + i * 60 + 4) * Math.PI / 180;
+    const a1 = (-90 + i * 60 + 56) * Math.PI / 180;
+    g.strokeStyle = `hsl(${c.hue},84%,62%)`;
+    g.beginPath(); g.arc(cx, cy, R, a0, a1); g.stroke();
+  });
+  g.lineCap = 'butt';
+  g.strokeStyle = '#64E3C8'; g.lineWidth = sw * .74;
+  g.beginPath(); g.arc(cx, cy, R * .445, 0, Math.PI * 2); g.stroke();
+  g.fillStyle = '#64E3C8';
+  g.beginPath(); g.arc(cx, cy, R * .16, 0, Math.PI * 2); g.fill();
+}
+
 function wrapText(ctx, text, maxW) {
   const words = text.split(/\s+/), lines = []; let cur = '';
   for (const w of words) {
@@ -1085,12 +1119,9 @@ async function drawCard(iss, fmt) {
   wrapText(g, iss.stat.toUpperCase(), F.w - pad * 2).slice(0, 2)
     .forEach(l => { g.fillText(l, cx, y); y += F.w * .033; });
 
-  /* footer lockup */
+  /* footer lockup — the same six-arc mark as the favicon and app icon */
   const fy = F.h - pad * (portrait ? 1.0 : .85);
-  g.strokeStyle = `hsl(${H},92%,80%)`; g.lineWidth = Math.max(2.4, F.w / 380);
-  const lr = F.w * .019;
-  g.beginPath(); g.arc(cx - F.w * .135, fy - F.w * .008, lr, 0, Math.PI * 2); g.stroke();
-  g.beginPath(); g.arc(cx - F.w * .135, fy - F.w * .008, lr * .4, 0, Math.PI * 2); g.stroke();
+  drawMark(g, cx - F.w * .135, fy - F.w * .008, F.w * .021);
   g.textAlign = 'left';
   g.font = `650 ${Math.round(F.w * .026)}px "Inter",-apple-system,Helvetica,Arial,sans-serif`;
   g.fillStyle = '#ffffff';
